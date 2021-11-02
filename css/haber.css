@@ -1,0 +1,102 @@
+* { box-sizing: border-box; }
+body { font-family: sans-serif; }
+
+a { 
+    text-decoration: none; 
+    color: unset;
+}
+
+.all-capital { text-transform: uppercase; }
+
+.wrapper {
+    width: 92.76%;
+    margin: 0 auto;
+}
+
+/* Header */
+header { background: #404a54; }
+header > .wrapper { display: flex; }
+
+#company-name-logo {
+    padding: 30px 55px 30px 30px;
+    background: #dc6226;
+}
+
+#company-name-logo h1 {
+    font-size: 52px;
+    font-weight: bold;
+    color: white;
+}
+
+#company-name-logo h1::before {
+    content: "\f0ac";
+    margin-right: 5px;
+    color: white;
+    font-family: "Font Awesome 5 Free";
+    font-size: 46px;
+    font-weight: 900;
+}
+
+#company-name-logo p {
+    color: #d9c6c8;
+    font-size: 12px;
+    text-align: right;
+}
+
+#page-links {
+    margin: 0 45px;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-links > li { margin-right: 45px; }
+#page-links > li:last-child { margin-right: 0; }
+
+#page-links > li a { 
+    color: rgba(227, 244, 231, 1);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#page-links > li a:hover {
+    color: rgba(227, 244, 231, 0.3);
+    transition: color 1s ease-in-out;
+}
+
+#page-links > li.selected a { color: #dc6226; }
+
+#header-social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header-social-links li { margin-right: 20px; }
+#header-social-links li:last-child { margin-right: 0; }
+#header-social-links a { font-size: 0; }
+
+#header-social-links a::before {
+    color: rgba(128, 140, 148, 1);
+    font-size: 30px;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+}
+
+#header-social-links a:hover::before {
+    color: rgba(255, 255, 255, 1);
+    transition: color 1s ease-in-out;
+}
+
+#header-social-links .header-twitter-link::before { content: "\f081"; }
+#header-social-links .header-youtube-link::before { content: "\f167"; }
+
+#header-social-links .header-rss-link::before { 
+    content: "\f09e"; 
+    font-family: "Font Awesome 5 Free";
+}
+
+#header-social-links .header-facebook-link::before { content: "\f082"; }
+#header-social-links .header-google-plus-link::before { content: "\f0d4"; }
