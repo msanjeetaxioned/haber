@@ -1,5 +1,5 @@
 * { box-sizing: border-box; }
-body { font-family: sans-serif; }
+body { font-family: Helvetica, sans-serif; }
 
 a { 
     text-decoration: none; 
@@ -91,7 +91,7 @@ header > .wrapper { display: flex; }
 }
 
 #header-social-links .header-twitter-link::before { content: "\f081"; }
-#header-social-links .header-youtube-link::before { content: "\f167"; }
+#header-social-links .header-youtube-link::before { content: "\f431"; }
 
 #header-social-links .header-rss-link::before { 
     content: "\f09e"; 
@@ -100,3 +100,55 @@ header > .wrapper { display: flex; }
 
 #header-social-links .header-facebook-link::before { content: "\f082"; }
 #header-social-links .header-google-plus-link::before { content: "\f0d4"; }
+
+/*Home Page*/
+
+/* Banner */
+#banner {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#banner img { display: block; }
+
+#banner .image-info {
+    width: 55.17%;
+    padding: 30px 25px ;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: flex;
+    background: #dc6226;
+    flex-direction: row;
+    align-items: center;
+    transform: translate(-50%, 0%);
+    text-align: center;
+}
+
+#banner .image-info > * { display: inline-block; }
+#banner .image-info a { font-size: 0; }
+
+#banner .image-info a::before {
+    color: white;
+    font-family: "Font Awesome 5 Free";
+    font-size: 35px;
+    font-weight: 900;
+}
+
+#banner #previous-button::before { 
+    content: "\f053"; 
+    margin-left: 0px;
+}
+
+#banner #next-button::before { 
+    content: "\f054"; 
+    margin-right: 0px;
+}
+
+#banner .image-info h2 {
+    color: white;
+    flex: auto;
+    font-size: 38px;
+    font-weight: bold;
+}
