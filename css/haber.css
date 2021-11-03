@@ -180,7 +180,11 @@ header > .wrapper { display: flex; }
 #focus ul li:last-child { margin-right: 0; }
 
 #focus ul figure {
+    padding: 18px;
+    border-radius: 38px;
     margin-bottom: 30px;
+    display: inline-block;
+    background: #dc6226;
 }
 
 #focus ul h4 {
