@@ -784,16 +784,15 @@ footer .footer-links #footer-google-plus-link::before { content: "\f0d4"; }
 }
 
 @media only screen and (max-width: 767px) {
-    header > .wrapper { 
-        flex-direction: column;
-    }
+    header > .wrapper { flex-direction: column; }
+
     #company-name-logo { 
         padding: 20px;
         text-align: center; 
     }
-    #company-name-logo p {
-        text-align: center;
-    }
+
+    #company-name-logo p { text-align: center; }
+
     #page-links {
         padding: 10px 0;
         flex-wrap: wrap;
