@@ -386,3 +386,65 @@ header > .wrapper { display: flex; }
 }
 
 #clients ul li:last-child { margin-right: 0; }
+
+/* Form */
+#contact-form { position: relative; }
+
+#contact-form .wrapper {
+    position: absolute;
+    top: 90px;
+    left: 3.62%;
+    color: white;
+}
+
+#contact-form h3 {
+    margin-bottom: 45px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#contact-form .form-user-input {
+    margin-bottom: 12px;
+    display: flex; 
+
+}
+#contact-form .form-user-input div { 
+    margin-right: 35px;
+    flex: 1; 
+}
+
+#contact-form .form-user-input input,textarea {
+    padding: 10px 15px;
+    border: 1px solid #b8b7b7;
+    display: block;
+    background: rgb(80, 93, 100, 0.3);
+    color: #b8b7b7;
+    font-size: 14px;
+}
+
+#contact-form .form-user-input input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+#contact-form .form-user-input input:last-child { margin-bottom: 0; }
+#contact-form .form-user-input textarea { flex: 2; }
+#contact-form .send-button { text-align: right; }
+
+#contact-form .send-button input {
+    padding: 15px 30px;
+    border: none;
+    display: inline-block;
+    background: rgba(220, 98, 38, 1);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#contact-form .send-button input:hover {
+    background: rgba(220, 98, 38, 0.6);
+    transition: background 1s ease-in-out;
+    cursor: pointer;
+}
