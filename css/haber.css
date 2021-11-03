@@ -448,3 +448,52 @@ header > .wrapper { display: flex; }
     transition: background 1s ease-in-out;
     cursor: pointer;
 }
+
+/* Contact Us Info */
+#contact-us-info { background: #525964; }
+#contact-us-info > .wrapper { padding: 110px 0; }
+#contact-us-info ul { display: flex; }
+
+#contact-us-info ul li {
+    margin-right: 50px;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    flex: 1;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+#contact-us-info ul li:last-child { margin-right: 0; }
+#contact-us-info li span { font-size: 0; }
+
+#contact-us-info li div {
+    padding: 10px;
+    border-radius: 51px;
+    margin-right: 20px;
+    background: #6d717c;
+}
+
+#contact-us-info li span::before {
+    width: 82px;
+    height: 82px;
+    border-radius: 41px;
+    display: inline-block;
+    text-align: center;
+    background: rgba(220, 98, 38, 1);
+    font-family: "Font Awesome 5 Free";
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 82px;
+}
+
+#contact-us-info .contact-address span::before { content: "\f3c5"; }
+#contact-us-info .contact-email span::before { content: "\f0e0"; }
+#contact-us-info .contact-phone span::before { content: "\f879"; }
+
+#contact-us-info .contact-phone p {
+    margin-bottom: 0;
+    color: white;
+    font-size: 26px;
+}
