@@ -88,7 +88,7 @@ header > .wrapper { display: flex; }
     color: rgba(128, 140, 148, 1);
     font-size: 30px;
     font-family: "Font Awesome 5 Brands";
-    font-weight: 900;
+    font-weight: 400;
 }
 
 #header-social-links a:hover::before {
@@ -102,6 +102,7 @@ header > .wrapper { display: flex; }
 #header-social-links .header-rss-link::before { 
     content: "\f09e"; 
     font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }
 
 #header-social-links .header-facebook-link::before { content: "\f082"; }
@@ -497,3 +498,57 @@ header > .wrapper { display: flex; }
     color: white;
     font-size: 26px;
 }
+
+/* Footer */
+footer { background: #404c52; }
+
+footer > .wrapper {
+    padding-top: 60px;
+    padding-bottom: 200px;
+    display: flex;
+}
+
+footer > .wrapper > * { flex: 1; }
+
+footer h1 {
+    margin-bottom: 25px;
+    color: white;
+}
+
+footer h1 a {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer h1 a:hover { color: #dc6226; }
+footer h1 span { font-size: 16px; }
+footer .footer-links { display: flex; }
+footer .footer-links a { font-size: 0; }
+footer .footer-links li { margin-right: 25px; }
+footer .footer-links li:last-child { margin-right: 0; }
+
+footer .footer-links a::before {
+    color: rgba(220, 98, 38, 1);
+    font-family: "Font Awesome 5 Brands";
+    font-size: 38px;
+    font-weight: 400;
+}
+
+footer .footer-links a:hover:before {
+    color: white;
+    transition: color 1s ease-in-out;
+}
+
+footer .footer-links #footer-tumblr-link::before { content: "\f174"; }
+footer .footer-links #footer-twitter-link::before { content: "\f081"; }
+footer .footer-links #footer-youtube-link::before { content: "\f431"; }
+
+footer .footer-links #footer-rss-link::before {
+    content: "\f09e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+footer .footer-links #footer-facebook-link::before { content: "\f082"; }
+footer .footer-links #footer-google-plus-link::before { content: "\f0d4"; }
