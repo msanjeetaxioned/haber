@@ -412,6 +412,7 @@ header > .wrapper { display: flex; }
     display: flex; 
 
 }
+
 #contact-form .form-user-input div { 
     margin-right: 35px;
     flex: 1; 
@@ -566,7 +567,7 @@ footer .footer-links #footer-google-plus-link::before { content: "\f0d4"; }
     #banner .image-info h2 { font-size: 32px; }
 
     #focus .wrapper {
-        padding-top: 75px;
+        padding-top: 70px;
         padding-bottom: 65px;
     }
 
@@ -574,7 +575,7 @@ footer .footer-links #footer-google-plus-link::before { content: "\f0d4"; }
     #focus ul h4 { padding: 0 20px; }
 
     #advice > .wrapper {
-        padding-top: 75px;
+        padding-top: 70px;
         padding-bottom: 65px;
     }
 
@@ -624,4 +625,143 @@ footer .footer-links #footer-google-plus-link::before { content: "\f0d4"; }
 
     footer .copyright-info { margin-bottom: 35px; }
     footer h1 { margin-bottom: 20px; }
+}
+
+/* CSS For 768 to 1023 Width */
+@media only screen and (max-width: 1023px) {
+    .wrapper {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+
+    header > .wrapper { 
+        width: 100%;
+        margin: 0;
+    }
+
+    #company-name-logo h1 { font-size: 42px; }
+    #header-social-links { display: none; }
+    #page-links { margin: 0; }
+    #page-links > li { margin-right: 15px; }
+    #banner .image-info { padding: 10px; }
+    #banner .image-info a::before { font-size: 22px; }
+    #banner .image-info h2 { font-size: 24px; }
+
+    #focus h3 {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    #focus ul { flex-wrap: wrap; }
+
+    #focus ul li {
+        width: calc(50% - 13px);
+        margin-right: 0;
+        flex: unset;
+    }
+
+    #focus ul li:first-child { margin-bottom: 30px; }
+    #focus ul li:nth-child(odd) { margin-right: 26px; }
+    #focus ul figure { margin-bottom: 20px; }
+
+    #focus ul h4 {
+        padding: 0;
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    #focus ul p {
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+
+    #focus ul a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #advice .advice-heading h3 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    #advice .advice-heading p { font-size: 18px; }
+    #advice ul { flex-direction: column; }
+
+    #advice ul li {
+        padding: 10px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #advice ul li:last-child { margin-bottom: 0; }
+    #advice .advice-heading { margin-bottom: 25px; }
+    #advice li figure { margin-bottom: 20px; }
+
+    #advice li h4 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    #advice li p { line-height: 20px;}
+    #article-4 { background: gray; }
+
+    #article-4 > .wrapper { 
+        width: 100%;
+        margin: 0;
+    }
+    #article-4 > ul { flex-direction: column; }
+    #article-4 > ul > li {
+        padding: 0;
+        flex-grow: unset;
+        flex-basis: unset;
+    }
+    #article-4 > ul > li > * {
+        margin: 0 20px;
+        margin-bottom: 20px;
+    }
+    #article-4 li li, #article-4 li p { font-size: 16px; }
+    #article-4 .part1 { background: #dc6226; }
+
+    #article-4 li h3 {
+        margin-top: 25px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #article-4 ul div { text-align: center; }
+
+    #article-4 .part2 { 
+        padding-left: 0;
+        background: #3e4952;
+    }
+
+    #article-4 div a { padding: 10px; }
+
+    #contact-form {
+        position: static;
+        background: darkgray;
+    }
+
+    #contact-form  > figure { display: none; }
+
+    #contact-form .wrapper {
+        padding: 70px 0;
+        position: static;
+        transform: unset;
+    }
+
+    #contact-form .form-user-input { flex-direction: column;}
+
+    #contact-form .form-user-input div { 
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    #contact-form .send-button { text-align: center; }
+    #contact-us-info ul { margin: 0 10px; }
+    footer h1 a { font-size: 24px; }
+    footer h1 span { font-size: 14px; }
+    footer .footer-links a::before { font-size: 24px; }
 }
