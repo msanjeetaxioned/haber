@@ -797,4 +797,13 @@ footer .footer-links #footer-google-plus-link::before { content: "\f0d4"; }
         padding: 10px 0;
         flex-wrap: wrap;
     }
+
+    #banner { position: static; }
+    
+    #banner .image-info {
+        width: 100%;
+        padding: 20px 10px;
+        position: static;
+        transform: none;
+    }
 }
