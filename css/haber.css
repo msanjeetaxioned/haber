@@ -792,6 +792,7 @@ footer .footer-links #footer-google-plus-link::before { content: "\f0d4"; }
     footer .footer-links a::before { font-size: 24px; }
 }
 
+/* For Mobile resolution */
 @media only screen and (max-width: 767px) {
     header > .wrapper { flex-direction: column; }
 
@@ -828,7 +829,6 @@ footer .footer-links #footer-google-plus-link::before { content: "\f0d4"; }
     }
 
     #focus ul li:last-child { margin-bottom: 0; }
-
     #focus ul li:nth-child(-n + 2) { margin-bottom: 25px; }
     #focus ul li:nth-child(odd) { margin-right: 0; }
     #clients ul { margin: 0 10px; }
